@@ -15,6 +15,7 @@ import java.sql.SQLException;
 public class C3P0Test {
     //方式一：
     @Test
+
     public void testGetConnection() throws Exception {
         //获取c3p0连接池
         ComboPooledDataSource cpds = new ComboPooledDataSource();
