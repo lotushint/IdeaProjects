@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lotushint.factory.simplefactory.pizzastore.pizza</OriginalElement>
+  <nodes>
+    <node x="-109.0" y="298.0">com.lotushint.factory.simplefactory.pizzastore.order.OrderPizza</node>
+    <node x="154.0" y="298.0">com.lotushint.factory.simplefactory.pizzastore.order.SimpleFactory</node>
+    <node x="46.5" y="-115.0">com.lotushint.factory.simplefactory.pizzastore.pizza.Pizza</node>
+    <node x="-109.0" y="165.0">com.lotushint.factory.simplefactory.pizzastore.pizza.GreekPizza</node>
+    <node x="202.0" y="165.0">com.lotushint.factory.simplefactory.pizzastore.pizza.CheesePizza</node>
+    <node x="45.0" y="165.0">com.lotushint.factory.simplefactory.pizzastore.pizza.PepperPizza</node>
+    <node x="396.0" y="298.0">com.lotushint.factory.simplefactory.pizzastore.order.PizzaStore</node>
+    <node x="-109.0" y="488.0">com.lotushint.factory.simplefactory.pizzastore.order.OrderPizza2</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.order.PizzaStore" target="com.lotushint.factory.simplefactory.pizzastore.order.OrderPizza2" relationship="CREATE">
+      <point x="-0.0" y="44.0" />
+      <point x="476.5" y="532.0" />
+      <point x="68.5" y="-0.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.pizza.PepperPizza" target="com.lotushint.factory.simplefactory.pizzastore.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.order.OrderPizza2" target="com.lotushint.factory.simplefactory.pizzastore.pizza.Pizza" relationship="TO_ONE">
+      <point x="-68.5" y="-0.0" />
+      <point x="-132.0" y="532.0" />
+      <point x="-132.0" y="0.0" />
+      <point x="-67.0" y="-0.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.order.SimpleFactory" target="com.lotushint.factory.simplefactory.pizzastore.pizza.GreekPizza" relationship="CREATE">
+      <point x="-0.0" y="-58.0" />
+      <point x="252.5" y="280.5" />
+      <point x="-42.0" y="280.5" />
+      <point x="-0.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.order.SimpleFactory" target="com.lotushint.factory.simplefactory.pizzastore.pizza.PepperPizza" relationship="CREATE">
+      <point x="-91.0" y="-58.0" />
+      <point x="48.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.pizza.GreekPizza" target="com.lotushint.factory.simplefactory.pizzastore.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="-42.0" y="140.0" />
+      <point x="113.5" y="140.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.pizza.CheesePizza" target="com.lotushint.factory.simplefactory.pizzastore.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="270.0" y="140.0" />
+      <point x="113.5" y="140.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.order.OrderPizza" target="com.lotushint.factory.simplefactory.pizzastore.pizza.Pizza" relationship="TO_ONE">
+      <point x="-109.0" y="-0.0" />
+      <point x="-132.0" y="370.5" />
+      <point x="-132.0" y="0.0" />
+      <point x="-67.0" y="-0.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.order.SimpleFactory" target="com.lotushint.factory.simplefactory.pizzastore.pizza.CheesePizza" relationship="CREATE">
+      <point x="17.5" y="-58.0" />
+      <point x="-0.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.simplefactory.pizzastore.order.OrderPizza" target="com.lotushint.factory.simplefactory.pizzastore.order.SimpleFactory" relationship="TO_ONE">
+      <point x="109.0" y="-14.5" />
+      <point x="-98.5" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8213783403656821" showDependencies="true" x="447.29708904109543" y="264.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

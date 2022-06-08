@@ -1,0 +1,92 @@
+line=1	(wordId=1,pos=0)		name=保留字: begin
+line=1	(wordId=27,pos=0)		name=行尾符: 
+
+line=2	(wordId=3,pos=0)		name=保留字: integer
+line=2	(wordId=11,pos=1)		name=标识符: key
+line=2	(wordId=26,pos=0)		name=界符: ;
+line=2	(wordId=27,pos=0)		name=行尾符: 
+
+line=3	(wordId=3,pos=0)		name=保留字: integer
+line=3	(wordId=11,pos=2)		name=标识符: map
+line=3	(wordId=26,pos=0)		name=界符: ;
+line=3	(wordId=27,pos=0)		name=行尾符: 
+
+line=4	(wordId=3,pos=0)		name=保留字: integer
+line=4	(wordId=4,pos=0)		name=保留字: function
+line=4	(wordId=11,pos=3)		name=标识符: method
+line=4	(wordId=24,pos=0)		name=界符: (
+line=4	(wordId=11,pos=4)		name=标识符: number
+line=4	(wordId=25,pos=0)		name=界符: )
+line=4	(wordId=26,pos=0)		name=界符: ;
+line=4	(wordId=27,pos=0)		name=行尾符: 
+
+line=5	(wordId=1,pos=0)		name=保留字: begin
+line=5	(wordId=27,pos=0)		name=行尾符: 
+
+line=6	(wordId=3,pos=0)		name=保留字: integer
+line=6	(wordId=11,pos=5)		name=标识符: n
+line=1	(wordId=32,pos=0)		name=:  
+line=6	(wordId=12,pos=0)		name=常数: 10
+line=6	(wordId=26,pos=0)		name=界符: ;
+line=6	(wordId=27,pos=0)		name=行尾符: 
+
+line=7	(wordId=7,pos=0)		name=保留字: if
+line=7	(wordId=11,pos=5)		name=标识符: n
+line=7	(wordId=18,pos=0)		name=运算符: <=
+line=7	(wordId=12,pos=0)		name=常数: 0
+line=7	(wordId=27,pos=0)		name=行尾符: 
+
+line=8	(wordId=8,pos=0)		name=保留字: then
+line=8	(wordId=11,pos=3)		name=标识符: method
+line=1	(wordId=32,pos=0)		name=:  
+line=8	(wordId=12,pos=0)		name=常数: 1
+line=8	(wordId=27,pos=0)		name=行尾符: 
+
+line=9	(wordId=9,pos=0)		name=保留字: else
+line=9	(wordId=27,pos=0)		name=行尾符: 
+
+line=10	(wordId=11,pos=3)		name=标识符: method
+line=1	(wordId=32,pos=0)		name=:  
+line=10	(wordId=11,pos=5)		name=标识符: n
+line=10	(wordId=15,pos=0)		name=运算符: *
+line=10	(wordId=11,pos=3)		name=标识符: method
+line=10	(wordId=24,pos=0)		name=界符: (
+line=10	(wordId=11,pos=5)		name=标识符: n
+line=10	(wordId=14,pos=0)		name=运算符: -
+line=10	(wordId=12,pos=0)		name=常数: 1
+line=10	(wordId=25,pos=0)		name=界符: )
+line=10	(wordId=26,pos=0)		name=界符: ;
+line=10	(wordId=27,pos=0)		name=行尾符: 
+
+line=11	(wordId=2,pos=0)		name=保留字: end
+line=11	(wordId=26,pos=0)		name=界符: ;
+line=11	(wordId=27,pos=0)		name=行尾符: 
+
+line=12	(wordId=5,pos=0)		name=保留字: read
+line=12	(wordId=24,pos=0)		name=界符: (
+line=12	(wordId=11,pos=2)		name=标识符: map
+line=12	(wordId=25,pos=0)		name=界符: )
+line=12	(wordId=26,pos=0)		name=界符: ;
+line=12	(wordId=27,pos=0)		name=行尾符: 
+
+line=13	(wordId=11,pos=1)		name=标识符: key
+line=1	(wordId=32,pos=0)		name=:  
+line=13	(wordId=11,pos=3)		name=标识符: method
+line=13	(wordId=24,pos=0)		name=界符: (
+line=13	(wordId=11,pos=2)		name=标识符: map
+line=13	(wordId=25,pos=0)		name=界符: )
+line=13	(wordId=26,pos=0)		name=界符: ;
+line=13	(wordId=27,pos=0)		name=行尾符: 
+
+line=14	(wordId=6,pos=0)		name=保留字: write
+line=14	(wordId=24,pos=0)		name=界符: (
+line=14	(wordId=11,pos=1)		name=标识符: key
+line=14	(wordId=25,pos=0)		name=界符: )
+line=14	(wordId=26,pos=0)		name=界符: ;
+line=14	(wordId=27,pos=0)		name=行尾符: 
+
+line=15	(wordId=2,pos=0)		name=保留字: end
+line=15	(wordId=26,pos=0)		name=界符: ;
+line=15	(wordId=27,pos=0)		name=行尾符: 
+
+line=16	(wordId=28,pos=0)		name=结尾符: #

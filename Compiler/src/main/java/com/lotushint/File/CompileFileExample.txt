@@ -1,0 +1,7 @@
+begin;
+void main(){
+    if a == 8{
+        a = a + 2;
+    }
+}
+end;

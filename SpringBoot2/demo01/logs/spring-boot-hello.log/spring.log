@@ -1,0 +1,14 @@
+2022-02-25 11:09:41.021  INFO 8652 --- [main] com.hint.demo01.HelloBootApplication     : Starting HelloBootApplication on my1314 with PID 8652 (D:\jetbrainsProjects\SpringBoot2\demo01\target\demo01-0.0.1-SNAPSHOT.jar started by hefan in D:\jetbrainsProjects\SpringBoot2\demo01\target)
+2022-02-25 11:09:41.031  INFO 8652 --- [main] com.hint.demo01.HelloBootApplication     : No active profile set, falling back to default profiles: default
+2022-02-25 11:09:42.400  INFO 8652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8088 (http)
+2022-02-25 11:09:42.425  INFO 8652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-25 11:09:42.428  INFO 8652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2022-02-25 11:09:42.518  INFO 8652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/oa]     : Initializing Spring embedded WebApplicationContext
+2022-02-25 11:09:42.518  INFO 8652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1405 ms
+2022-02-25 11:09:42.709  INFO 8652 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-02-25 11:09:42.716 DEBUG 8652 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-02-25 11:09:42.776 DEBUG 8652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 4 mappings in 'requestMappingHandlerMapping'
+2022-02-25 11:09:42.802 DEBUG 8652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-02-25 11:09:42.810 DEBUG 8652 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-02-25 11:09:43.145  INFO 8652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8088 (http) with context path '/oa'
+2022-02-25 11:09:43.161  INFO 8652 --- [main] com.hint.demo01.HelloBootApplication     : Started HelloBootApplication in 2.782 seconds (JVM running for 4.562)

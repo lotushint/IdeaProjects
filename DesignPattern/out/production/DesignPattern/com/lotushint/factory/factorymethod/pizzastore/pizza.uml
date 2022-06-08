@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lotushint.factory.factorymethod.pizzastore.pizza</OriginalElement>
+  <nodes>
+    <node x="175.75" y="-115.0">com.lotushint.factory.factorymethod.pizzastore.pizza.Pizza</node>
+    <node x="115.0" y="465.0">com.lotushint.factory.factorymethod.pizzastore.order.LDOrderPizza</node>
+    <node x="253.0" y="165.0">com.lotushint.factory.factorymethod.pizzastore.pizza.LDCheesePizza</node>
+    <node x="-95.0" y="465.0">com.lotushint.factory.factorymethod.pizzastore.order.BJOrderPizza</node>
+    <node x="77.0" y="165.0">com.lotushint.factory.factorymethod.pizzastore.pizza.LDPepperPizza</node>
+    <node x="350.0" y="298.0">com.lotushint.factory.factorymethod.pizzastore.order.PizzaStore</node>
+    <node x="-95.0" y="165.0">com.lotushint.factory.factorymethod.pizzastore.pizza.BJPepperPizza</node>
+    <node x="10.0" y="298.0">com.lotushint.factory.factorymethod.pizzastore.order.OrderPizza</node>
+    <node x="428.0" y="165.0">com.lotushint.factory.factorymethod.pizzastore.pizza.BJCheesePizza</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.BJOrderPizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.BJPepperPizza" relationship="CREATE">
+      <point x="-30.0" y="-44.0" />
+      <point x="-11.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.BJOrderPizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.BJCheesePizza" relationship="CREATE">
+      <point x="-0.0" y="44.0" />
+      <point x="0.0" y="570.5" />
+      <point x="528.5" y="570.5" />
+      <point x="25.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.BJOrderPizza" target="com.lotushint.factory.factorymethod.pizzastore.order.OrderPizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="0.0" y="440.0" />
+      <point x="105.0" y="440.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.pizza.LDCheesePizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="330.5" y="140.0" />
+      <point x="242.75" y="140.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.LDOrderPizza" target="com.lotushint.factory.factorymethod.pizzastore.order.OrderPizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="210.0" y="440.0" />
+      <point x="105.0" y="440.0" />
+      <point x="0.0" y="58.5" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.pizza.LDPepperPizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="155.0" y="140.0" />
+      <point x="242.75" y="140.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.LDOrderPizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.LDPepperPizza" relationship="CREATE">
+      <point x="15.0" y="-44.0" />
+      <point x="70.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.pizza.BJCheesePizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="503.5" y="140.0" />
+      <point x="242.75" y="140.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.pizza.BJPepperPizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.Pizza" relationship="GENERALIZATION">
+      <point x="0.0" y="-44.0" />
+      <point x="-19.0" y="140.0" />
+      <point x="242.75" y="140.0" />
+      <point x="0.0" y="115.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.PizzaStore" target="com.lotushint.factory.factorymethod.pizzastore.order.BJOrderPizza" relationship="CREATE">
+      <point x="15.0" y="44.0" />
+      <point x="445.5" y="585.5" />
+      <point x="15.0" y="585.5" />
+      <point x="15.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.LDOrderPizza" target="com.lotushint.factory.factorymethod.pizzastore.pizza.LDCheesePizza" relationship="CREATE">
+      <point x="87.5" y="-44.0" />
+      <point x="-33.0" y="44.0" />
+    </edge>
+    <edge source="com.lotushint.factory.factorymethod.pizzastore.order.PizzaStore" target="com.lotushint.factory.factorymethod.pizzastore.order.LDOrderPizza" relationship="CREATE">
+      <point x="-0.0" y="44.0" />
+      <point x="430.5" y="509.0" />
+      <point x="95.0" y="-0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8099861303744799" showDependencies="true" x="242.0" y="235.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

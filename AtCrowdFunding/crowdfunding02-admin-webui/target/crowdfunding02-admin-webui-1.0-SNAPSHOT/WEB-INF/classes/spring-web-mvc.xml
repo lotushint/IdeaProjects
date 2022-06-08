@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!-- 配置自动扫描的包 -->
+    <context:component-scan base-package="com.lotushint.crowd.mvc"></context:component-scan>
+
+    <!-- 配置SpringMVC的注解驱动 -->
+    <mvc:annotation-driven/>
+
+    <!-- 配置视图解析器 -->
+    <!-- 拼接公式→前缀+逻辑视图+后缀=物理视图 -->
+    <!-- @RequestMapping("/xxx/xxx")
+         public String xxx() {
+            // 这个返回值就是逻辑视图
+            return "target";
+         }
+         物理视图是一个可以直接转发过去的地址 物理视图："/WEB-INF/"+"target"+".jsp"
+         转发路径："/WEB-INF/target.jsp" -->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!-- 配置基于XML的异常映射 -->
+    <bean id="simpleMappingExceptionResolver"
+          class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <!-- 配置异常类型和具体视图页面的对应关系 -->
+        <property name="exceptionMappings">
+            <props>
+                <!-- key属性指定异常全类名 -->
+                <!-- 标签体中写对应的视图（这个值要拼前后缀得到具体路径） -->
+                <prop key="java.lang.Exception">system-error</prop>
+
+                <prop key="com.lotushint.crowd.exception.AccessForbiddenException">admin-login</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 配置view-controller，直接把请求地址和视图名称关联起来，不必写handler方法了 -->
+    <!--
+        @RequestMapping("/admin/to/login/page.html")
+        public String toLoginPage(){
+            return "admin-login";
+        }
+     -->
+    <mvc:view-controller path="/admin/to/login/page.html" view-name="admin-login"/>
+    <mvc:view-controller path="/admin/to/main/page.html" view-name="admin-main"/>
+    <mvc:view-controller path="/admin/to/add/page.html" view-name="admin-add"/>
+
+    <!-- 注册拦截器 -->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <!-- mvc:mapping 配置要拦截的资源 -->
+            <!-- /*对应一层路径，比如：/aaa -->
+            <!-- /**对应多层路径，比如：/aaa/bbb 或/aaa/bbb/ccc 或/aaa/bbb/ccc/ddd -->
+            <mvc:mapping path="/**"/>
+            <!-- mvc:exclude-mapping 配置不拦截的资源 -->
+            <!-- 登录页面不拦截 -->
+            <mvc:exclude-mapping path="/admin/to/login/page.html"/>
+            <!-- controller方法放行 -->
+            <mvc:exclude-mapping path="/admin/do/login.html"/>
+            <!-- 退出登录页面没有必要做拦截：
+                    用户已经登录成功后，当服务器很长时间没有收到请求，session会被释放，
+                    此时再点退出登录，如果拦截则会跳到登录页，要求登录后再点击退出，显然没有必要，
+                    所以不设置拦截
+             -->
+            <mvc:exclude-mapping path="/admin/do/logout.html"/>
+
+            <!-- 配置拦截器类 -->
+            <bean class="com.lotushint.crowd.mvc.interceptor.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+</beans>

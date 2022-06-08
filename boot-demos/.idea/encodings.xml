@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/demo009/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo05/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo06/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo07/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo08/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo10/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo11_JsonComponent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo12_Resources/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo13_welcome/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo14_url_contentnegotiation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo24_jdbctemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo25_jpa/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo26_mybatis/src/main/java" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//com.lotushint.mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lotushint.mybatis.dao.EmployeeMapper">
+    <!--    public Employee getEmpById(Integer id);-->
+    <select id="getEmpById" resultType="emp">
+        select *
+        from tbl_employee
+        where id = #{id}
+    </select>
+
+    <!--  public List<Employee> getemps();  -->
+    <select id="getemps" resultType="emp">
+        select *
+        from tbl_employee
+    </select>
+</mapper>

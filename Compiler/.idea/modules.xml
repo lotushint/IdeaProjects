@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Compiler.iml" filepath="$PROJECT_DIR$/Compiler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DFA/DFA.iml" filepath="$PROJECT_DIR$/DFA/DFA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IntermediateCode/IntermediateCode.iml" filepath="$PROJECT_DIR$/IntermediateCode/IntermediateCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LL1Analyse/LL1Analyse.iml" filepath="$PROJECT_DIR$/LL1Analyse/LL1Analyse.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecursiveDescent/RecursiveDescent.iml" filepath="$PROJECT_DIR$/RecursiveDescent/RecursiveDescent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SLRAnalyser/SLRAnalyser.iml" filepath="$PROJECT_DIR$/SLRAnalyser/SLRAnalyser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TextAnalyze/TextAnalyze.iml" filepath="$PROJECT_DIR$/TextAnalyze/TextAnalyze.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,115 @@
+line=1	(wordId=1,charPos=0)		name=保留字: begin
+line=1	(wordId=27,charPos=0)		name=行尾符: 
+
+line=2	(wordId=3,charPos=0)		name=保留字: integer
+line=2	(wordId=11,charPos=1)		name=标识符: key
+line=2	(wordId=26,charPos=0)		name=界符: ;
+line=2	(wordId=27,charPos=0)		name=行尾符: 
+
+line=3	(wordId=3,charPos=0)		name=保留字: integer
+line=3	(wordId=11,charPos=2)		name=标识符: map
+line=3	(wordId=26,charPos=0)		name=界符: ;
+line=3	(wordId=27,charPos=0)		name=行尾符: 
+
+line=4	(wordId=3,charPos=0)		name=保留字: integer
+line=4	(wordId=4,charPos=0)		name=保留字: function
+line=4	(wordId=11,charPos=3)		name=标识符: method
+line=4	(wordId=24,charPos=0)		name=界符: (
+line=4	(wordId=11,charPos=4)		name=标识符: number
+line=4	(wordId=25,charPos=0)		name=界符: )
+line=4	(wordId=26,charPos=0)		name=界符: ;
+line=4	(wordId=27,charPos=0)		name=行尾符: 
+
+line=5	(wordId=1,charPos=0)		name=保留字: begin
+line=5	(wordId=27,charPos=0)		name=行尾符: 
+
+line=6	(wordId=3,charPos=0)		name=保留字: integer
+line=6	(wordId=11,charPos=5)		name=标识符: n
+line=6	(wordId=23,charPos=0)		name=运算符: =
+line=6	(wordId=12,charPos=0)		name=常数: 10
+line=6	(wordId=26,charPos=0)		name=界符: ;
+line=6	(wordId=27,charPos=0)		name=行尾符: 
+
+line=7	(wordId=7,charPos=0)		name=保留字: if
+line=7	(wordId=11,charPos=5)		name=标识符: n
+line=7	(wordId=18,charPos=0)		name=运算符: <=
+line=7	(wordId=12,charPos=0)		name=常数: 0
+line=7	(wordId=27,charPos=0)		name=行尾符: 
+
+line=8	(wordId=8,charPos=0)		name=保留字: then
+line=8	(wordId=11,charPos=3)		name=标识符: method
+line=8	(wordId=23,charPos=0)		name=运算符: =
+line=8	(wordId=12,charPos=0)		name=常数: 1
+line=8	(wordId=27,charPos=0)		name=行尾符: 
+
+line=9	(wordId=9,charPos=0)		name=保留字: else
+line=9	(wordId=27,charPos=0)		name=行尾符: 
+
+line=10	(wordId=11,charPos=3)		name=标识符: method
+line=10	(wordId=23,charPos=0)		name=运算符: =
+line=10	(wordId=11,charPos=5)		name=标识符: n
+line=10	(wordId=15,charPos=0)		name=运算符: *
+line=10	(wordId=11,charPos=3)		name=标识符: method
+line=10	(wordId=24,charPos=0)		name=界符: (
+line=10	(wordId=11,charPos=5)		name=标识符: n
+line=10	(wordId=14,charPos=0)		name=运算符: -
+line=10	(wordId=12,charPos=0)		name=常数: 1
+line=10	(wordId=25,charPos=0)		name=界符: )
+line=10	(wordId=26,charPos=0)		name=界符: ;
+line=10	(wordId=27,charPos=0)		name=行尾符: 
+
+line=11	(wordId=2,charPos=0)		name=保留字: end
+line=11	(wordId=26,charPos=0)		name=界符: ;
+line=11	(wordId=27,charPos=0)		name=行尾符: 
+
+line=12	(wordId=5,charPos=0)		name=保留字: read
+line=12	(wordId=24,charPos=0)		name=界符: (
+line=12	(wordId=11,charPos=2)		name=标识符: map
+line=12	(wordId=25,charPos=0)		name=界符: )
+line=12	(wordId=26,charPos=0)		name=界符: ;
+line=12	(wordId=27,charPos=0)		name=行尾符: 
+
+line=13	(wordId=11,charPos=1)		name=标识符: key
+line=13	(wordId=23,charPos=0)		name=运算符: =
+line=13	(wordId=11,charPos=3)		name=标识符: method
+line=13	(wordId=24,charPos=0)		name=界符: (
+line=13	(wordId=11,charPos=2)		name=标识符: map
+line=13	(wordId=25,charPos=0)		name=界符: )
+line=13	(wordId=26,charPos=0)		name=界符: ;
+line=13	(wordId=27,charPos=0)		name=行尾符: 
+
+line=14	(wordId=7,charPos=0)		name=保留字: if
+line=14	(wordId=11,charPos=1)		name=标识符: key
+line=14	(wordId=21,charPos=0)		name=运算符: ==
+line=14	(wordId=12,charPos=0)		name=常数: 10
+line=14	(wordId=27,charPos=0)		name=行尾符: 
+
+line=15	(wordId=8,charPos=0)		name=保留字: then
+line=15	(wordId=11,charPos=1)		name=标识符: key
+line=15	(wordId=21,charPos=0)		name=运算符: ==
+line=15	(wordId=12,charPos=0)		name=常数: 0
+line=15	(wordId=26,charPos=0)		name=界符: ;
+line=15	(wordId=27,charPos=0)		name=行尾符: 
+
+line=16	(wordId=9,charPos=0)		name=保留字: else
+line=16	(wordId=27,charPos=0)		name=行尾符: 
+
+line=17	(wordId=11,charPos=1)		name=标识符: key
+line=17	(wordId=23,charPos=0)		name=运算符: =
+line=17	(wordId=12,charPos=0)		name=常数: 1
+line=17	(wordId=27,charPos=0)		name=行尾符: 
+
+line=18	(wordId=6,charPos=0)		name=保留字: write
+line=18	(wordId=24,charPos=0)		name=界符: (
+line=18	(wordId=11,charPos=1)		name=标识符: key
+line=18	(wordId=25,charPos=0)		name=界符: )
+line=18	(wordId=26,charPos=0)		name=界符: ;
+line=18	(wordId=27,charPos=0)		name=行尾符: 
+
+line=19	(wordId=2,charPos=0)		name=保留字: end
+line=19	(wordId=26,charPos=0)		name=界符: ;
+line=19	(wordId=27,charPos=0)		name=行尾符: 
+
+line=20	(wordId=28,charPos=0)		name=结尾符: #
+line=20	(wordId=27,charPos=0)		name=行尾符: 
+

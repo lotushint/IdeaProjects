@@ -1,0 +1,7 @@
+符号表
+编号 	行号 	名称 
+1		2		key
+2		3		map
+3		4		method
+4		4		number
+5		6		n

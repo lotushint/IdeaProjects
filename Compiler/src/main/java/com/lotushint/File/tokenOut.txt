@@ -1,0 +1,17 @@
+public 关键字
+class 关键字
+NFAToDFA 标识符
+{ 专用符号
+public 关键字
+static 关键字
+void 关键字
+main 关键字
+( 专用符号
+String 关键字
+[ 专用符号
+] 专用符号
+args 标识符
+) 专用符号
+{ 专用符号
+} 专用符号
+} 专用符号

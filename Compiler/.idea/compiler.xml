@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SLRAnalyser" />
+        <module name="TextAnalyze" />
+        <module name="IntermediateCode" />
+        <module name="DFA" />
+        <module name="LL1Analyse" />
+        <module name="RecursiveDescent" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="Compiler" target="14" />
+      <module name="DFA" target="8" />
+      <module name="IntermediateCode" target="8" />
+      <module name="LL1Analyse" target="8" />
+      <module name="RecursiveDescent" target="8" />
+      <module name="SLRAnalyser" target="8" />
+      <module name="TextAnalyze" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

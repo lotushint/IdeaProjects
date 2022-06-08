@@ -1,0 +1,20 @@
+begin
+    integer key;
+    integer map;
+    integer function method(number);
+    begin
+        integer n = 10;
+        if n <= 0
+            then method = 1
+        else
+            method = n * method(n-1);
+    end;
+    read(map);
+    key = method(map);
+    if key == 10
+        then key == 0;
+    else
+        key = 1
+    write(key);
+end;
+#

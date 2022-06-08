@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lotushint.principle.liskoc.B</OriginalElement>
+  <nodes>
+    <node x="0.0" y="0.0">com.lotushint.principle.liskoc.A</node>
+    <node x="1.0" y="80.0">com.lotushint.principle.liskoc.B</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.lotushint.principle.liskoc.B" target="com.lotushint.principle.liskoc.A" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="31.5" y="55.0" />
+  <SelectedNodes>
+    <node>com.lotushint.principle.liskoc.B</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

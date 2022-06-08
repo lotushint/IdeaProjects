@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.lotushint.principle.composite</OriginalElement>
+  <nodes>
+    <node x="179.5" y="214.0">com.lotushint.principle.composite.B</node>
+    <node x="134.5" y="85.0">com.lotushint.principle.composite.A</node>
+  </nodes>
+  <notes>
+    <note x="0.0" y="0.0">
+      <node>com.lotushint.principle.composite.A</node>
+      <value>如果我们只是让B类去使用A类方法，使用继承就会然让B和A的耦合性增强</value>
+      <edge>
+        <point x="0.0" y="-39.5" />
+        <point x="0.0" y="17.5" />
+      </edge>
+    </note>
+  </notes>
+  <edges>
+    <edge source="com.lotushint.principle.composite.B" target="com.lotushint.principle.composite.A" relationship="GENERALIZATION">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="210.0" y="122.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

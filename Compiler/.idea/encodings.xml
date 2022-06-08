@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/First.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/Follow.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/Grammar.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/Item.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/ItemFamily.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/ItemSet.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/Lattice.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/Production.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/models/SLRAnalyserTable.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/tools/LexicalAnalyser.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/tools/SLRAnalyser.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/SLRAnalyser/src/main/java/tools/SRException.java" charset="GBK" />
+  </component>
+</project>

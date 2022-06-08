@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>FirstFollow集的实现</title>
+    <style>
+        .text {
+            padding-left: 200px;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+<body>
+<form th:action="@{/inputTextServlet}" width="200" height="200" method="post">
+    请输入文法(end结尾)：<br>
+    <span class="text"></span>
+    <textarea name="textInput" rows="10" cols="20" width="100%" height="100%"
+              placeholder="输入内容"></textarea>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

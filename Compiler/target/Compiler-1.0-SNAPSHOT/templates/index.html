@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment</title>
+</head>
+<style type="text/css">
+    th {
+        border: 0px;
+    }
+</style>
+<body>
+<table id="dataTable" border="0" cellspacing="0" cellpadding="10" style="text-align: left" align="center">
+    <tr>
+        <th colspan="5" align="center">Experiment List</th>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/testDFARecognition}">1.DFA的识别程序</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/test/2}">2.词法分析程序的实现</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/test/3}">3.FirstFollow集的实现</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/testLL1Parser}">4.LL(1)语法分析程序的实现</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/RecursiveDescentParsing}">5.递归下降语法分析方法的实现</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/SLR1Parser}">6.SLR(1)语法分析程序的实现</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/SyntaxAnalysisOfIdentifiers}">7.标识符的语法分析</a>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a th:href="@{/ArithmeticExpressionIntermediate}">8.算术表达式四元式中间代码生成</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
