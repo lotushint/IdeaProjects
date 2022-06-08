@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="MaxMatrixSum" />
+        <module name="Knapsack" />
+        <module name="BinarySearch" />
+        <module name="MatrixMultiplication" />
+        <module name="IntegerDivision" />
+        <module name="LongestContinuousAscendingSubsequence" />
+        <module name="SingleSourceShortestPath" />
+        <module name="BigIntegerMultiplication" />
+        <module name="TowerOfHanoi" />
+        <module name="ChessboardCoverage" />
+        <module name="LongestAscendingSubsequence" />
+        <module name="StableMatch" />
+        <module name="Sort" />
+        <module name="StrassenMatrixMultiplication" />
+        <module name="PowerSet" />
+        <module name="FullArray" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8" />
+  </component>
+</project>
