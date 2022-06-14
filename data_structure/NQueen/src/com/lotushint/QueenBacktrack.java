@@ -74,7 +74,7 @@ public class QueenBacktrack {
             if (array[j] == array[i]) {
                 return false;
             }
-            //同一斜线存在两个皇后，斜率为 1或 -1
+            //同一斜线存在两个皇后，斜率为 1 或 -1
             if ((Math.abs(j - i)) == Math.abs(array[j] - array[i])) {
                 return false;
             }

@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @package com.lotushint
  * @description 0-1背包问题（贪心法）:此算法选取的是单位价值最高的优先放进背包，其他选择策略：如价值最大的，最轻的，随机选择的
  */
-public class Knapsack2 {
+public class KnapsackGreedy {
     public static void main(String[] args) {
 //        int[] weight = new int[]{2, 2, 6, 5, 4};
 //        int[] value = new int[]{6, 3, 5, 4, 6};

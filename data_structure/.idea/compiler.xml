@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MaxMatrixSum" />
         <module name="Knapsack" />
+        <module name="MaxMatrixSum" />
         <module name="BinarySearch" />
         <module name="MatrixMultiplication" />
         <module name="IntegerDivision" />
@@ -17,8 +17,8 @@
         <module name="TowerOfHanoi" />
         <module name="ChessboardCoverage" />
         <module name="LongestAscendingSubsequence" />
-        <module name="StableMatch" />
         <module name="Sort" />
+        <module name="StableMatch" />
         <module name="StrassenMatrixMultiplication" />
         <module name="PowerSet" />
         <module name="FullArray" />

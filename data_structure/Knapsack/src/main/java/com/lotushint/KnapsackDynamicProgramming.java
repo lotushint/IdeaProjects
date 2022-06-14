@@ -5,11 +5,11 @@ import java.util.Scanner;
 /**
  * @author lotushint
  * @version 1.0
- * @date 2022 2022/4/21 10:23
+ * @date 2022/4/21 10:23
  * @package com.lotushint
  * @description 0-1背包问题（动态规划法）
  */
-public class Knapsack {
+public class KnapsackDynamicProgramming {
     public static void main(String[] args) {
 //        int[] weight = new int[]{2, 2, 6, 5, 4};
 //        int[] value = new int[]{6, 3, 5, 4, 6};

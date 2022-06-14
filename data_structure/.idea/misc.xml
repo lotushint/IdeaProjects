@@ -10,29 +10,29 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/StableMatch/pom.xml" />
-        <option value="$PROJECT_DIR$/TowerOfHanoi/pom.xml" />
         <option value="$PROJECT_DIR$/Power/pom.xml" />
         <option value="$PROJECT_DIR$/Set/pom.xml" />
-        <option value="$PROJECT_DIR$/FullArray/pom.xml" />
-        <option value="$PROJECT_DIR$/BinarySearch/pom.xml" />
-        <option value="$PROJECT_DIR$/Sort/pom.xml" />
-        <option value="$PROJECT_DIR$/StrassenMatrixMultiplication/pom.xml" />
-        <option value="$PROJECT_DIR$/BigIntegerMultiplication/pom.xml" />
-        <option value="$PROJECT_DIR$/IntegerDivision/pom.xml" />
-        <option value="$PROJECT_DIR$/ChessboardCoverage/pom.xml" />
-        <option value="$PROJECT_DIR$/LongestContinuousAscendingSubsequence/pom.xml" />
-        <option value="$PROJECT_DIR$/PowerSet/pom.xml" />
-        <option value="$PROJECT_DIR$/LongestAscendingSubsequence/pom.xml" />
-        <option value="$PROJECT_DIR$/MaxMatrixSum/pom.xml" />
-        <option value="$PROJECT_DIR$/MatrixMultiplication/pom.xml" />
         <option value="$PROJECT_DIR$/Backpack/pom.xml" />
+        <option value="$PROJECT_DIR$/LongestAscendingSubsequence/pom.xml" />
+        <option value="$PROJECT_DIR$/BigIntegerMultiplication/pom.xml" />
+        <option value="$PROJECT_DIR$/BinarySearch/pom.xml" />
+        <option value="$PROJECT_DIR$/ChessboardCoverage/pom.xml" />
+        <option value="$PROJECT_DIR$/FullArray/pom.xml" />
+        <option value="$PROJECT_DIR$/IntegerDivision/pom.xml" />
         <option value="$PROJECT_DIR$/Knapsack/pom.xml" />
+        <option value="$PROJECT_DIR$/LongestContinuousAscendingSubsequence/pom.xml" />
+        <option value="$PROJECT_DIR$/MatrixMultiplication/pom.xml" />
+        <option value="$PROJECT_DIR$/MaxMatrixSum/pom.xml" />
+        <option value="$PROJECT_DIR$/PowerSet/pom.xml" />
         <option value="$PROJECT_DIR$/SingleSourceShortestPath/pom.xml" />
+        <option value="$PROJECT_DIR$/Sort/pom.xml" />
+        <option value="$PROJECT_DIR$/StableMatch/pom.xml" />
+        <option value="$PROJECT_DIR$/StrassenMatrixMultiplication/pom.xml" />
+        <option value="$PROJECT_DIR$/TowerOfHanoi/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SuppressionsComponent">
