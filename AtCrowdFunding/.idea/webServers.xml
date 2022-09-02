@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="32873f5c-d538-4e1c-937c-69602bcac1f3" name="MyUbuntu">
+        <fileTransfer rootFolder="/var/lib/tomcat9" accessType="SFTP" host="192.168.92.128" port="22" sshConfigId="5d3bec64-4041-49dd-a07d-fb1ef57db609" sshConfig="lotushint@192.168.92.128:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
