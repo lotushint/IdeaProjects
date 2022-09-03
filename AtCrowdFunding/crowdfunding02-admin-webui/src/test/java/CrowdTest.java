@@ -1,5 +1,7 @@
 import com.lotushint.crowd.entity.Admin;
+import com.lotushint.crowd.entity.Role;
 import com.lotushint.crowd.mapper.AdminMapper;
+import com.lotushint.crowd.mapper.RoleMapper;
 import com.lotushint.crowd.service.api.AdminService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +26,7 @@ import java.sql.SQLException;
 //前者通过让测试在Spring容器环境下执行，使得 DataSource 可以被自动注入，后者通过 getBean 方法得到DataSource
 // 在类上标记必要的注解，Spring整合Junit
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = {"classpath:spring-persist-mybatis.xml","classpath:spring-persist-tx.xml"})
+@ContextConfiguration(locations = {"classpath:spring-persist-mybatis.xml", "classpath:spring-persist-tx.xml"})
 public class CrowdTest {
     @Autowired
     private DataSource dataSource;
@@ -32,6 +34,9 @@ public class CrowdTest {
     private AdminMapper adminMapper;
     @Autowired
     private AdminService adminService;
+
+    @Autowired
+    private RoleMapper roleMapper;
 
     /**
      * 测试数据库连接
@@ -103,8 +108,15 @@ public class CrowdTest {
      */
     @Test
     public void test() {
-        for(int i = 0; i < 238; i++) {
-            adminMapper.insert(new Admin(null, "loginAcct"+i, "userPswd"+i, "userName"+i, "email"+i, null));
+        for (int i = 0; i < 238; i++) {
+            adminMapper.insert(new Admin(null, "loginAcct" + i, "userPswd" + i, "userName" + i, "email" + i, null));
+        }
+    }
+
+    @Test
+    public void testRole() {
+        for (int i = 0; i < 235; i++) {
+            roleMapper.insert(new Role(null, "role" + i));
         }
     }
 }

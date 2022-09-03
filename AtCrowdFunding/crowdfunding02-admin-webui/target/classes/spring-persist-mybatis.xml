@@ -43,7 +43,7 @@
         </property>
     </bean>
 
-    <!-- 配置MapperScannerConfigurer来扫描Mapper接口所在的包 -->
+    <!-- 配置MapperScannerConfigurer来扫描 Mapper接口所在的包 -->
     <bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.lotushint.crowd.mapper"/>
     </bean>

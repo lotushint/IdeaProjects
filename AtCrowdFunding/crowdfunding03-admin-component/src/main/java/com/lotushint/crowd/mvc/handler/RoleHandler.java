@@ -9,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author lotushint
@@ -22,6 +23,7 @@ public class RoleHandler {
     @Autowired
     private RoleService roleService;
 
+    @ResponseBody
     @RequestMapping("/role/get/page/info.json")
     public ResultEntity<PageInfo<Role>> getPageInfo(
             // 使用@RequestParam注解的defaultValue属性，指定默认值，在请求中没有携带对应参数时使用默认值
