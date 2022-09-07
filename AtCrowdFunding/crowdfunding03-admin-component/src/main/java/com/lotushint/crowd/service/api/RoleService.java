@@ -3,6 +3,8 @@ package com.lotushint.crowd.service.api;
 import com.github.pagehelper.PageInfo;
 import com.lotushint.crowd.entity.Role;
 
+import java.util.List;
+
 /**
  * @author lotushint
  * @version 1.0
@@ -13,4 +15,10 @@ import com.lotushint.crowd.entity.Role;
 public interface RoleService {
 
     public PageInfo<Role> getPageInfo(Integer pageNum, Integer pageSize, String keyword);
+
+    void saveRole(Role role);
+
+    void updateRole(Role role);
+
+    void removeRole(List<Integer> roleIdList);
 }

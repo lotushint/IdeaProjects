@@ -24,7 +24,7 @@ function showConfirmModal(roleArray) {
 
 }
 
-// 执行分页，生成页面效果，任何时候调用这个函数都会重新加载页面
+// 外部函数一：执行分页，生成页面效果，任何时候调用这个函数都会重新加载页面
 function generatePage() {
 
     // 1.获取分页数据
@@ -35,7 +35,7 @@ function generatePage() {
 
 }
 
-// 远程访问服务器端程序获取pageInfo数据
+// 外部函数二：远程访问服务器端程序获取pageInfo数据
 function getPageInfoRemote() {
 
     // 调用$.ajax()函数发送请求并接受$.ajax()函数的返回值
@@ -81,7 +81,7 @@ function getPageInfoRemote() {
     return pageInfo;
 }
 
-// 填充表格
+// 外部函数三：填充表格
 function fillTableBody(pageInfo) {
 
     // 清除tbody中的旧的内容
@@ -129,7 +129,7 @@ function fillTableBody(pageInfo) {
     generateNavigator(pageInfo);
 }
 
-// 生成分页页码导航条
+// 外部函数四：生成分页页码导航条
 function generateNavigator(pageInfo) {
 
     // 获取总记录数
@@ -150,7 +150,7 @@ function generateNavigator(pageInfo) {
     $("#Pagination").pagination(totalRecord, properties);
 }
 
-// 翻页时的回调函数
+// 外部函数五：翻页时的回调函数
 function paginationCallBack(pageIndex, jQuery) {
 
     // 修改window对象的pageNum属性

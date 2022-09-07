@@ -297,8 +297,7 @@
                             style="float: right; margin-left: 10px;">
                         <i class=" glyphicon glyphicon-remove"></i> 删除
                     </button>
-                    <button
-                            type="button"
+                    <button type="button"
                             id="showAddModalBtn" class="btn btn-primary"
                             style="float: right;">
                         <i class="glyphicon glyphicon-plus"></i> 新增
@@ -331,8 +330,8 @@
     </div>
 </div>
 
-<%--<%@include file="/WEB-INF/modal-role-add.jsp" %>--%>
-<%--<%@include file="/WEB-INF/modal-role-edit.jsp" %>--%>
-<%--<%@include file="/WEB-INF/modal-role-confirm.jsp" %>--%>
+<%@include file="/WEB-INF/modal-role-add.jsp" %>
+<%@include file="/WEB-INF/modal-role-edit.jsp" %>
+<%@include file="/WEB-INF/modal-role-confirm.jsp" %>
 </body>
 </html>
