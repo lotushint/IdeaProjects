@@ -1,6 +1,13 @@
 spring:
-#  mvc:
-#    static-path-pattern: /res/**
+  #  mvc:
+  #    #当前项目 + static-path-pattern + 静态资源名 = 静态资源文件夹下找
+  #    static-path-pattern: /res/**
   web:
     resources:
-      static-locations: [classpath:/haha/]
+      #只能访问在 haha 文件夹下的静态资源
+      static-locations: classpath:/haha/
+  mvc:
+    hiddenmethod:
+      filter:
+        #使用 rest 风格，手动开启
+        enabled: true
