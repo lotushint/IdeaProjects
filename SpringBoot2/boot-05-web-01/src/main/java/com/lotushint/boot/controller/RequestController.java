@@ -25,30 +25,6 @@ public class RequestController {
         return "forward:/success";  //转发到  /success请求
     }
 
-    @ResponseBody
-    @GetMapping("/success")
-    public Map success(@RequestAttribute(value = "msg", required = false) String msg,
-                       @RequestAttribute(value = "code", required = false) Integer code,
-                       HttpServletRequest request) {
-        Object msg1 = request.getAttribute("msg");
-
-        Map<String, Object> map = new HashMap<>();
-//        Object hello = request.getAttribute("hello");
-//        Object world = request.getAttribute("world");
-//        Object message = request.getAttribute("message");
-
-        //request.getAttribute() 取到的 msg
-        map.put("reqMethod_msg", msg1);
-        //注解中取到的 msg
-        map.put("annotation_msg", msg);
-//        map.put("hello", hello);
-//        map.put("world", world);
-//        map.put("message", message);
-
-        return map;
-
-    }
-
     @GetMapping("/params")
     public String testParam(Map<String, Object> map,
                             Model model,
@@ -59,7 +35,33 @@ public class RequestController {
         request.setAttribute("message", "HelloWorld");
 
         Cookie cookie = new Cookie("c1", "v1");
+        //设置作用域
+        cookie.setDomain("localhost");
         response.addCookie(cookie);
         return "forward:/success";
+    }
+
+    @ResponseBody
+    @GetMapping("/success")
+    public Map success(@RequestAttribute(value = "msg", required = false) String msg,
+                       @RequestAttribute(value = "code", required = false) Integer code,
+                       HttpServletRequest request) {
+        Object msg1 = request.getAttribute("msg");
+
+        Map<String, Object> map = new HashMap<>();
+        Object hello = request.getAttribute("hello");
+        Object world = request.getAttribute("world");
+        Object message = request.getAttribute("message");
+
+        //request.getAttribute()  取到的 msg
+        map.put("reqMethod_msg", msg1);
+        //注解中取到的 msg
+        map.put("annotation_msg", msg);
+        map.put("hello", hello);
+        map.put("world", world);
+        map.put("message", message);
+
+        return map;
+
     }
 }
