@@ -84,6 +84,11 @@ public class WebConfig /*implements WebMvcConfigurer*/ {
             public void addFormatters(FormatterRegistry registry) {
                 registry.addConverter(new Converter<String, Pet>() {
 
+                    /**
+                     * 自定义添加一个转换
+                     * @param source the source object to convert, which must be an instance of {@code S} (never {@code null})
+                     * @return
+                     */
                     @Override
                     public Pet convert(String source) {
                         // 啊猫,3

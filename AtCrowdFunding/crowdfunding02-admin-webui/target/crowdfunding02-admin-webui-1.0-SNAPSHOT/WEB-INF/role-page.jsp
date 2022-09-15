@@ -7,7 +7,6 @@
 <script type="text/javascript" src="jquery/jquery.pagination.js"></script>
 <script type="text/javascript" src="crowd/my-role.js"></script>
 <script type="text/javascript">
-
     $(function () {
 
         // 1.为分页操作准备初始化数据

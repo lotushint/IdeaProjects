@@ -9,12 +9,12 @@
       <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="@192.168.92.128" uuid="674404bd-a03a-491f-a80e-87fc3ba04492">
+    <data-source source="LOCAL" name="@192.168.245.130" uuid="674404bd-a03a-491f-a80e-87fc3ba04492">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <remarks>Ubuntu</remarks>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://192.168.92.128:3306</jdbc-url>
+      <jdbc-url>jdbc:mysql://192.168.245.130:3306</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>

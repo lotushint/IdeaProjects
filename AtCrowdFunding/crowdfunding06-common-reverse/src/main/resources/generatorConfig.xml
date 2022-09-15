@@ -9,7 +9,7 @@
         </commentGenerator>
         <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
         <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/project_crowd"
+                        connectionURL="jdbc:mysql://192.168.245.130:3306/project_crowd"
                         userId="root"
                         password="123456"></jdbcConnection>
 
@@ -44,6 +44,6 @@
 
         <!-- 数据库表名字和我们的 entity 类对应的映射指定 -->
 <!--        <table tableName="t_admin" domainObjectName="Admin"/>-->
-        <table tableName="t_role" domainObjectName="Role"/>
+        <table tableName="t_menu" domainObjectName="Menu"/>
     </context>
 </generatorConfiguration>
