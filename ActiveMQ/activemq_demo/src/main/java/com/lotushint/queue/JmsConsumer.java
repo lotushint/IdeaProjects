@@ -7,7 +7,9 @@ import javax.jms.*;
 
 // 消息的消费者  也就是回答消息的系统
 public class JmsConsumer {
-    public static final String ACTIVEMQ_URL = "tcp://192.168.245.129:61616";
+//    public static final String ACTIVEMQ_URL = "tcp://192.168.245.129:61616";
+    // 本地 java 代码启动的
+    public static final String ACTIVEMQ_URL = "tcp://localhost:61616";
     // public static final String ACTIVEMQ_URL = "nio://192.168.245.129:61608";
     public static final String QUEUE_NAME = "queue01";
 

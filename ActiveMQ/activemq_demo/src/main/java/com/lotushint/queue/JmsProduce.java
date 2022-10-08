@@ -7,7 +7,9 @@ import javax.jms.*;
 
 public class JmsProduce {
     //  linux 上部署的activemq 的 IP 地址 + activemq 的端口号，如果用自己的需要改动
-    public static final String ACTIVEMQ_URL = "tcp://192.168.245.129:61616";
+//    public static final String ACTIVEMQ_URL = "tcp://192.168.245.129:61616";
+    // 本地 java 代码启动的
+    public static final String ACTIVEMQ_URL = "tcp://localhost:61616";
     //    public static final String ACTIVEMQ_URL = "nio://192.168.245.130:61608";
     public static final String QUEUE_NAME = "queue01";
 

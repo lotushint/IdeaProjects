@@ -11,3 +11,6 @@ spring:
       filter:
         #使用 rest 风格，手动开启
         enabled: true
+server:
+  servlet:
+    context-path: /world

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="activemq_demo" />
+        <module name="activemq_spring" />
       </profile>
     </annotationProcessing>
   </component>

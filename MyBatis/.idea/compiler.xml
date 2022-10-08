@@ -12,8 +12,6 @@
         <module name="MyBatis1" />
         <module name="MyBatis4_DynamicSQL" />
         <module name="Mybatis9_source" />
-        <module name="MyBatis2_config (1)" />
-        <module name="MyBatis2_config (2)" />
         <module name="Mybatis6_ssm" />
         <module name="Mybatis7_mbg" />
       </profile>

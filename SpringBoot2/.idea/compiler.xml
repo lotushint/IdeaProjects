@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="boot-01-helloworld" />
         <module name="boot-01-helloworld-2" />
+        <module name="boot-05-web-admin" />
+        <module name="boot-01-helloworld" />
         <module name="boot-05-web-01" />
       </profile>
     </annotationProcessing>
@@ -18,6 +19,7 @@
       <module name="boot-01-helloworld" options="-parameters" />
       <module name="boot-01-helloworld-2" options="-parameters" />
       <module name="boot-05-web-01" options="-parameters" />
+      <module name="boot-05-web-admin" options="-parameters" />
     </option>
   </component>
 </project>
