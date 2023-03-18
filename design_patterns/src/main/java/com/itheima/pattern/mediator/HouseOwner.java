@@ -14,7 +14,7 @@ public class HouseOwner extends Person {
 
     //和中介联系（沟通）
     public void constact(String message) {
-        mediator.constact(message,this);
+        mediator.constact(message, this);
     }
 
     //获取信息

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  静态工厂  -->
+    <bean id="staticDao" class="com.lotushint.factory.StaticFactory" factory-method="getStaticDao"/>
+
+    <!--  实例工厂  -->
+<!--    <bean id="instanceFactory" class="com.lotushint.factory.InstanceFactory"></bean>-->
+<!--    <bean id="instanceDao" class="com.lotushint.factory.InstanceFactory" factory-method="getInstanceDao"-->
+<!--          factory-bean="instanceFactory"/>-->
+    <!-- 实例工厂改进 -->
+    <bean id="instanceDao" class="com.lotushint.factory.InstanceFactoryBean"/>
+</beans>

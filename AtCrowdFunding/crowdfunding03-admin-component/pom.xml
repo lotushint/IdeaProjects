@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <artifactId>crowdfunding03-admin-component</artifactId>
-<!--    <packaging>jar</packaging>-->
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>

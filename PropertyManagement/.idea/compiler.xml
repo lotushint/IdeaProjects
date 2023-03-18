@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="property03-admin-component" />
+        <module name="property04-admin-entity" />
+        <module name="property05-common-util" />
+        <module name="property02-admin-webui" />
+        <module name="property06-common-reverse" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="epidemic02-admin-webui" target="1.8" />
+      <module name="epidemic03-admin-component" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="epidemic02-admin-webui" options="-parameters" />
+      <module name="epidemic03-admin-component" options="-parameters" />
+      <module name="property02-admin-webui" options="-parameters" />
+      <module name="property03-admin-component" options="-parameters" />
+      <module name="property04-admin-entity" options="-parameters" />
+    </option>
+  </component>
+</project>

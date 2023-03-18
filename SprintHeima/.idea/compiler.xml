@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="_21_case_interface_run_speed" />
+        <module name="_16_spring_junit" />
+        <module name="_23_case_handle_password" />
+        <module name="_10_container" />
+        <module name="_14_annotation_third_bean_manager" />
+        <module name="_15_spring_mybatis" />
+        <module name="_13_annotation_DI" />
+        <module name="2factoryMethod" />
+        <module name="_5_DI_constructor" />
+        <module name="_18_aop_quickstart" />
+        <module name="_24_case_transfer" />
+        <module name="_22_aop_advice_data" />
+        <module name="_20_aop_advice_type" />
+        <module name="_12_annotation_bean_manager" />
+        <module name="_11_annotation_bean" />
+        <module name="_25_case_transfer_log" />
+        <module name="_9_datasource" />
+        <module name="3beanLifecycle" />
+        <module name="_17_aop_demo" />
+        <module name="1start" />
+        <module name="_6_DI_autoware" />
+        <module name="_4_DI_set" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springmvc_05_response" />
+        <module name="springmvc_07_rest_case" />
+        <module name="springmvc_02_bean_load" />
+        <module name="springmvc_12_interceptor" />
+        <module name="springmvc_08_ssm" />
+        <module name="springmvc_09_result" />
+        <module name="springmvc_11_page" />
+        <module name="springmvc_10_exception" />
+        <module name="springmvc_01_quickstart" />
+        <module name="springmvc_03_request_mapping" />
+        <module name="springmvc_04_request_param" />
+        <module name="springmvc_06_rest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springmvc_01_quickstart" target="1.8" />
+      <module name="springmvc_02_bean_load" target="1.8" />
+      <module name="springmvc_03_request_mapping" target="1.8" />
+      <module name="springmvc_04_request_param" target="1.8" />
+      <module name="springmvc_05_response" target="1.8" />
+      <module name="springmvc_06_rest" target="1.8" />
+      <module name="springmvc_07_rest_case" target="1.8" />
+      <module name="springmvc_08_ssm" target="1.8" />
+      <module name="springmvc_09_result" target="1.8" />
+      <module name="springmvc_10_exception" target="1.8" />
+      <module name="springmvc_11_page" target="1.8" />
+      <module name="springmvc_12_interceptor" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

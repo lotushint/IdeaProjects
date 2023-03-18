@@ -13,6 +13,7 @@
         <module name="IntegerDivision" />
         <module name="LongestContinuousAscendingSubsequence" />
         <module name="SingleSourceShortestPath" />
+        <module name="ceshi" />
         <module name="BigIntegerMultiplication" />
         <module name="TowerOfHanoi" />
         <module name="ChessboardCoverage" />
