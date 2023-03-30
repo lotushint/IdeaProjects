@@ -1,0 +1,12 @@
+logging:
+  level:
+    root: info
+#    com.lotushint: warn
+country: china
+user:
+  name1: lotus
+likes:
+  - basketball
+  - football
+  - sing
+  - dance

@@ -40,6 +40,9 @@
           <element id="archive" name="dubbo-interface-1.0-SNAPSHOT.jar">
             <element id="module-output" name="dubbo-interface" />
           </element>
+          <element id="archive" name="dubbo-pojo-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dubbo-pojo" />
+          </element>
         </element>
       </element>
       <element id="directory" name="META-INF">

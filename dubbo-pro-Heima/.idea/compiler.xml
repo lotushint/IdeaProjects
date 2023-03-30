@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="dubbo-web" />
-        <module name="dubbo-interface" />
         <module name="dubbo-service" />
+        <module name="dubbo-interface" />
+        <module name="dubbo-pojo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dubbo-interface" target="1.8" />
+      <module name="dubbo-pojo" target="1.8" />
       <module name="dubbo-service" target="1.8" />
       <module name="dubbo-web" target="1.8" />
     </bytecodeTargetLevel>

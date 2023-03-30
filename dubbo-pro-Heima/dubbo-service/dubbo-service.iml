@@ -55,5 +55,6 @@
     <orderEntry type="library" name="Maven: com.google.guava:guava:20.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.curator:curator-recipes:4.0.0" level="project" />
     <orderEntry type="module" module-name="dubbo-interface" />
+    <orderEntry type="module" module-name="dubbo-pojo" />
   </component>
 </module>
