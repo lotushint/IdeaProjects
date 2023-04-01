@@ -1,6 +1,19 @@
 package com.itcast.test;
 
+import com.alibaba.fastjson.JSONObject;
+import com.aliyuncs.CommonRequest;
+import com.aliyuncs.CommonResponse;
+import com.aliyuncs.DefaultAcsClient;
+import com.aliyuncs.IAcsClient;
+import com.aliyuncs.exceptions.ClientException;
+import com.aliyuncs.exceptions.ServerException;
+import com.aliyuncs.http.MethodType;
+import com.aliyuncs.profile.DefaultProfile;
 import com.itheima.utils.SMSUtils;
+import org.junit.Test;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author lotushint
@@ -10,7 +23,7 @@ import com.itheima.utils.SMSUtils;
  * @description
  */
 public class SMSTest {
-    public static void main(String[] args)throws Exception {
-        SMSUtils.sendShortMessage("SMS_275295148","18479522791","2456");
+    public static void main(String[] args) throws Exception {
+        SMSUtils.sendShortMessage("SMS_275345349","18479522791","2456");
     }
 }

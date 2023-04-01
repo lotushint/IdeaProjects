@@ -3,13 +3,11 @@ package com.itheima.redis;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.itheima.redis.pojo.User;
-import jdk.internal.org.objectweb.asm.Handle;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
-import java.util.HashMap;
 import java.util.Map;
 
 @SpringBootTest

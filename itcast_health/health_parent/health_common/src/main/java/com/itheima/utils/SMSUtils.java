@@ -1,20 +1,33 @@
 package com.itheima.utils;
 
+import com.alibaba.fastjson.JSONObject;
+import com.aliyuncs.CommonRequest;
+import com.aliyuncs.CommonResponse;
 import com.aliyuncs.DefaultAcsClient;
 import com.aliyuncs.IAcsClient;
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsRequest;
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.exceptions.ClientException;
+import com.aliyuncs.exceptions.ServerException;
 import com.aliyuncs.http.MethodType;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 短信发送工具类
  */
 public class SMSUtils {
-    public static final String VALIDATE_CODE = "SMS_275295148";//发送短信验证码
-    public static final String ORDER_NOTICE = "SMS_159771588";//体检预约成功通知
+    /**
+     * 发送短信验证码
+     */
+    public static final String VALIDATE_CODE = "SMS_275345349";
+    /**
+     * 体检预约成功通知
+     */
+    public static final String ORDER_NOTICE = "SMS_275320333";
 
     /**
      * 发送短信
@@ -60,5 +73,46 @@ public class SMSUtils {
             // 请求成功
             System.out.println("请求成功");
         }
+    }
+
+    /**
+     * 发送短信 2
+     *
+     * @param templateCode 模版
+     * @param phoneNumbers 电话号码
+     * @param param        自定义参数：比如验证码
+     * @return
+     */
+    public static boolean sendShortMessage2(String templateCode, String phoneNumbers, String param){
+        // 将 param 封装成 map
+        Map<String, String> params = new HashMap<>();
+        params.put("code", param);
+
+        DefaultProfile profile =
+                DefaultProfile.getProfile("default", "LTAI5t9YfqbjmDghcq9npVcV", "yLlggc7lH1uJyQG5saLA5LFrwlaPyR");
+        IAcsClient client = new DefaultAcsClient(profile);
+
+        CommonRequest request = new CommonRequest();
+        //request.setProtocol(ProtocolType.HTTPS);
+        request.setMethod(MethodType.POST);
+        request.setDomain("dysmsapi.aliyuncs.com");
+        request.setVersion("2017-05-25");
+        request.setAction("SendSms");
+
+        request.putQueryParameter("PhoneNumbers", phoneNumbers); // 手机号
+        request.putQueryParameter("SignName", "lotushint"); // 签名
+        request.putQueryParameter("TemplateCode", templateCode); // 模板CODE
+        request.putQueryParameter("TemplateParam", JSONObject.toJSONString(params)); // 验证码map。转换成json
+
+        try {
+            CommonResponse response = client.getCommonResponse(request);
+            System.out.println(response.getData());
+            return response.getHttpResponse().isSuccess();
+        } catch (ServerException e) {
+            e.printStackTrace();
+        } catch (ClientException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 }

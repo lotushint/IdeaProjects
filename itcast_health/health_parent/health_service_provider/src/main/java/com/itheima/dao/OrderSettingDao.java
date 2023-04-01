@@ -15,4 +15,13 @@ public interface OrderSettingDao {
     long findCountByOrderDate(Date orderDate);
 
     List<OrderSetting> getOrderSettingByMonth(String date);
+
+    OrderSetting findByOrderDate(Date date);
+
+    /**
+     * 更新已预约人数
+     *
+     * @param orderSetting
+     */
+    void editReservationsByOrderDate(OrderSetting orderSetting);
 }

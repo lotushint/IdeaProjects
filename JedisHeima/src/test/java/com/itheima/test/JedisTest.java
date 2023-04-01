@@ -22,6 +22,7 @@ public class JedisTest {
     void setup() {
         // 1.建立连接
 //        jedis = new Jedis("192.168.245.129", 6379);
+        // 使用 jedis 连接池
         jedis = JedisConnectionFactory.getJedis();
         // 2.设置密码
         jedis.auth("123456");
