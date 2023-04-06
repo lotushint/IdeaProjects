@@ -6,25 +6,25 @@ import com.itheima.pojo.Member;
 import java.util.List;
 
 public interface MemberDao {
-    public List<Member> findAll();
+    List<Member> findAll();
 
-    public Page<Member> selectByCondition(String queryString);
+    Page<Member> selectByCondition(String queryString);
 
-    public void add(Member member);
+    void add(Member member);
 
-    public void deleteById(Integer id);
+    void deleteById(Integer id);
 
-    public Member findById(Integer id);
+    Member findById(Integer id);
 
-    public Member findByTelephone(String telephone);
+    Member findByTelephone(String telephone);
 
-    public void edit(Member member);
+    void edit(Member member);
 
-    public Integer findMemberCountBeforeDate(String date);
+    Integer findMemberCountBeforeDate(String date);
 
-    public Integer findMemberCountByDate(String date);
+    Integer findMemberCountByDate(String date);
 
-    public Integer findMemberCountAfterDate(String date);
+    Integer findMemberCountAfterDate(String date);
 
-    public Integer findMemberTotalCount();
+    Integer findMemberTotalCount();
 }

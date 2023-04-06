@@ -44,4 +44,24 @@ public class ValidateCodeController {
         jedis.setex(telephone + RedisMessageConstant.SENDTYPE_ORDER, 300, validateCode.toString());
         return new Result(true, MessageConstant.SEND_VALIDATECODE_SUCCESS);
     }
+
+    /**
+     * 手机快速登录时发送手机验证码
+     *
+     * @param telephone
+     * @return
+     */
+    @RequestMapping("/send4Login")
+    public Result send4Login(String telephone) {
+        //随机生成4位验证码
+        Integer validateCode = ValidateCodeUtils.generateValidateCode(6);
+        //给用户发送验收码
+        SMSUtils.sendShortMessage2(SMSUtils.VALIDATE_CODE, telephone, validateCode.toString());
+
+        System.out.println("发送的手机验证码为：" + validateCode);
+        //将验证码保存到 Redis（5分钟）
+        Jedis jedis = jedisPool.getResource();
+        jedis.setex(telephone + RedisMessageConstant.SENDTYPE_LOGIN, 300, validateCode.toString());
+        return new Result(true, MessageConstant.SEND_VALIDATECODE_SUCCESS);
+    }
 }

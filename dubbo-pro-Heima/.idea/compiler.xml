@@ -12,11 +12,5 @@
         <module name="dubbo-pojo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="dubbo-interface" target="1.8" />
-      <module name="dubbo-pojo" target="1.8" />
-      <module name="dubbo-service" target="1.8" />
-      <module name="dubbo-web" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
