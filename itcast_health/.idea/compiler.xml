@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="JasperReportsDemo" />
         <module name="freemarkerdemo" />
         <module name="springsecuritydemo" />
         <module name="health_interface" />
@@ -16,6 +17,7 @@
         <module name="health_common" />
         <module name="health_mobile" />
         <module name="health_jobs" />
+        <module name="itextdemo" />
       </profile>
     </annotationProcessing>
   </component>

@@ -18,5 +18,5 @@ public interface ReportService {
      *      thisMonthVisitsNumber -> number
      *      hotSetmeals -> List<Setmeal>
      */
-    Map<String,Object> getBusinessReport() throws Exception;
+    Map<String,Object> getBusinessReportData() throws Exception;
 }

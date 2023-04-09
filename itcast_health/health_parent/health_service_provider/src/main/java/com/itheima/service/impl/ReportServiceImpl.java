@@ -28,7 +28,7 @@ public class ReportServiceImpl implements ReportService {
     private OrderDao orderDao;
 
     @Override
-    public Map<String, Object> getBusinessReport() throws Exception {
+    public Map<String, Object> getBusinessReportData() throws Exception {
         //获得当前日期
         String today = DateUtils.parseDate2String(DateUtils.getToday());
         //获得本周一的日期

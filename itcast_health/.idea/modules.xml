@@ -8,7 +8,6 @@
       <module fileurl="file://$PROJECT_DIR$/health_parent/health_service_provider/health_service_provider.iml" filepath="$PROJECT_DIR$/health_parent/health_service_provider/health_service_provider.iml" />
       <module fileurl="file://$PROJECT_DIR$/itcast_health.iml" filepath="$PROJECT_DIR$/itcast_health.iml" />
       <module fileurl="file://$PROJECT_DIR$/quartzdemo/quartzdemo.iml" filepath="$PROJECT_DIR$/quartzdemo/quartzdemo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springsecuritydemo.iml" filepath="$PROJECT_DIR$/springsecuritydemo.iml" />
     </modules>
   </component>
 </project>

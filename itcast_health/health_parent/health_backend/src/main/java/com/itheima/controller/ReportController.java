@@ -6,6 +6,11 @@ import com.itheima.entity.Result;
 import com.itheima.service.MemberService;
 import com.itheima.service.ReportService;
 import com.itheima.service.SetmealService;
+import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -120,7 +125,7 @@ public class ReportController {
     @RequestMapping("/getBusinessReportData")
     public Result getBusinessReportData() {
         try {
-            Map<String, Object> result = reportService.getBusinessReport();
+            Map<String, Object> result = reportService.getBusinessReportData();
             return new Result(true, MessageConstant.GET_BUSINESS_REPORT_SUCCESS, result);
         } catch (Exception e) {
             e.printStackTrace();
@@ -137,7 +142,7 @@ public class ReportController {
     public Result exportBusinessReport(HttpServletRequest request, HttpServletResponse response) {
         try {
             //远程调用报表服务获取报表数据
-            Map<String, Object> result = reportService.getBusinessReport();
+            Map<String, Object> result = reportService.getBusinessReportData();
             //取出返回结果数据，准备将报表数据写入到Excel文件中
             String reportDate = (String) result.get("reportDate");
             Integer todayNewMember = (Integer) result.get("todayNewMember");
@@ -210,6 +215,44 @@ public class ReportController {
         } catch (Exception e) {
             e.printStackTrace();
             return new Result(true, MessageConstant.GET_BUSINESS_REPORT_FAIL);
+        }
+    }
+
+    /**
+     * 导出运营数据到pdf并提供客户端下载
+     *
+     * @param request
+     * @param response
+     * @return
+     */
+    @RequestMapping("/exportBusinessReport4PDF")
+    public Result exportBusinessReport4PDF(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            Map<String, Object> result = reportService.getBusinessReportData();
+
+            //取出返回结果数据，准备将报表数据写入到 PDF 文件中
+            List<Map> hotSetmeal = (List<Map>) result.get("hotSetmeal");
+
+            //动态获取模板文件绝对磁盘路径
+            String jrxmlPath = request.getSession().getServletContext().getRealPath("template") + File.separator + "health_business3.jrxml";
+            String jasperPath = request.getSession().getServletContext().getRealPath("template") + File.separator + "health_business3.jasper";
+            //编译模板
+            JasperCompileManager.compileReportToFile(jrxmlPath, jasperPath);
+
+            //填充数据---使用JavaBean数据源方式填充
+            JasperPrint jasperPrint = JasperFillManager.fillReport(jasperPath, result, new JRBeanCollectionDataSource(hotSetmeal));
+
+            ServletOutputStream out = response.getOutputStream();
+            response.setContentType("application/pdf");
+            response.setHeader("content-Disposition", "attachment;filename=report.pdf");
+
+            //输出文件
+            JasperExportManager.exportReportToPdfStream(jasperPrint, out);
+
+            return null;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return new Result(false, MessageConstant.GET_BUSINESS_REPORT_FAIL);
         }
     }
 }

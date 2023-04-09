@@ -18,6 +18,8 @@
         <option value="$PROJECT_DIR$/quartzdemo/pom.xml" />
         <option value="$PROJECT_DIR$/freemarkerdemo/pom.xml" />
         <option value="$PROJECT_DIR$/springsecuritydemo/pom.xml" />
+        <option value="$PROJECT_DIR$/itextdemo/pom.xml" />
+        <option value="$PROJECT_DIR$/JasperReportsDemo/pom.xml" />
       </list>
     </option>
   </component>
