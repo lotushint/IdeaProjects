@@ -19,7 +19,6 @@ import org.springframework.stereotype.Service;
  * @description
  */
 @Service
-
 public class BookServiceImpl2 extends ServiceImpl<BookDao, Book> implements IBookService {
     @Autowired
     private BookDao bookDao;
@@ -34,11 +33,11 @@ public class BookServiceImpl2 extends ServiceImpl<BookDao, Book> implements IBoo
     @Override
     public IPage<Book> getPage(int currentPage, int pageSize, Book book) {
         LambdaQueryWrapper<Book> lqw = new LambdaQueryWrapper();
-        lqw.like(Strings.isNotEmpty(book.getType()),Book::getType,book.getType());
-        lqw.like(Strings.isNotEmpty(book.getName()),Book::getName,book.getName());
-        lqw.like(Strings.isNotEmpty(book.getDescription()),Book::getDescription,book.getDescription());
-        IPage page = new Page(currentPage,pageSize);
-        bookDao.selectPage(page,lqw);
+        lqw.like(Strings.isNotEmpty(book.getType()), Book::getType, book.getType());
+        lqw.like(Strings.isNotEmpty(book.getName()), Book::getName, book.getName());
+        lqw.like(Strings.isNotEmpty(book.getDescription()), Book::getDescription, book.getDescription());
+        IPage page = new Page(currentPage, pageSize);
+        bookDao.selectPage(page, lqw);
         return page;
     }
 }
