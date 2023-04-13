@@ -16,6 +16,7 @@ import org.springframework.context.annotation.Configuration;
 public class MybatisPlusConfig {
     /**
      * 使用分页功能要配置拦截器
+     *
      * @return
      */
     @Bean

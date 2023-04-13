@@ -19,13 +19,20 @@ import java.sql.SQLIntegrityConstraintViolationException;
 @Slf4j
 public class GlobalExceptionHandler {
     @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
-    public R<String> exceptionHandler (SQLIntegrityConstraintViolationException exception){
+    public R<String> exceptionHandler(SQLIntegrityConstraintViolationException exception) {
         log.error(exception.getMessage());
-        if (exception.getMessage().contains("Duplicate entry")){
+        if (exception.getMessage().contains("Duplicate entry")) {
             String[] split = exception.getMessage().split(" ");
             String msg = split[2] + "已存在";
             return R.error(msg);
         }
         return R.error("failed");
+    }
+
+    @ExceptionHandler(CustomException.class)
+    public R<String> exceptionHandler(CustomException exception) {
+        log.error(exception.getMessage());
+
+        return R.error(exception.getMessage());
     }
 }
