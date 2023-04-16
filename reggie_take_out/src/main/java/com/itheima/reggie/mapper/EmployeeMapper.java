@@ -11,6 +11,5 @@ import org.apache.ibatis.annotations.Mapper;
  * @package com.itheima.reggie.mapper
  * @description
  */
-@Mapper
 public interface EmployeeMapper extends BaseMapper<Employee> {
 }

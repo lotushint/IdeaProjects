@@ -1,15 +1,14 @@
 package com.itheima.reggie.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.itheima.reggie.entity.Dish;
-import org.apache.ibatis.annotations.Mapper;
+import com.itheima.reggie.entity.DishFlavor;
 
 /**
  * @author lotushint
  * @version 1.0
- * @date 2023/4/13 17:43
+ * @date 2023/4/15 12:04
  * @package com.itheima.reggie.mapper
  * @description
  */
-public interface DishMapper extends BaseMapper<Dish> {
+public interface DishFlavorMapper extends BaseMapper<DishFlavor> {
 }

@@ -11,6 +11,5 @@ import org.apache.ibatis.annotations.Mapper;
  * @package com.itheima.reggie.mapper
  * @description
  */
-@Mapper
 public interface CategoryMapper extends BaseMapper<Category> {
 }

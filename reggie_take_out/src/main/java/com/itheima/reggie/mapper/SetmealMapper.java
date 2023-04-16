@@ -11,6 +11,5 @@ import org.apache.ibatis.annotations.Mapper;
  * @package com.itheima.reggie.mapper
  * @description
  */
-@Mapper
 public interface SetmealMapper extends BaseMapper<Setmeal> {
 }
