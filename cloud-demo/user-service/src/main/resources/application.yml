@@ -8,6 +8,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
     name: userservice # user 服务的服务名称
+  cloud:
+    nacos:
+      server-addr: 192.168.245.129:8848
+      discovery:
+        cluster-name: HZ # 集群名称,这里 HZ 指杭州
 mybatis:
   type-aliases-package: cn.itcast.user.pojo
   configuration:
@@ -17,7 +22,7 @@ logging:
     cn.itcast: debug
   pattern:
     dateformat: MM-dd HH:mm:ss:SSS
-eureka:
-  client:
-    service-url: # eureka 的地址信息
-      defaultZone: http://127.0.0.1:10086/eureka
+#eureka:
+#  client:
+#    service-url: # eureka 的地址信息
+#      defaultZone: http://127.0.0.1:10086/eureka
