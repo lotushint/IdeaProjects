@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: userservice
+  profiles:
+    active: dev # 环境
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml # 文件后缀名
+        namespace: 5c731ad5-36ac-4c46-8df2-2b34c55b1a48 # dev 环境的 uuid，如果不配，默认是 public
+      server-addr: 192.168.245.129:8848 # nacos 地址
