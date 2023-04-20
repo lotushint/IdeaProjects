@@ -64,7 +64,7 @@ public class UserController {
             log.info("code={}", code);
 
             //调用阿里云提供的短信服务API完成短信发送 TODO 此处用指定验证码发送短信 但还是用控制台打印的 code
-            SMSUtils.sendMessage("lotushint", "SMS_276386268", phone, "1234");
+//            SMSUtils.sendMessage("lotushint", "SMS_276386268", phone, "1234");
 
             //需要将生成的验证码保存到 session
             session.setAttribute(phone, code);
