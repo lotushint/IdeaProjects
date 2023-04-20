@@ -100,4 +100,19 @@ public class DishController {
 
         return R.success("新增菜品成功");
     }
+
+    /**
+     * 根据条件查询对应的菜品数据
+     * @param dish
+     * @return
+     */
+    @GetMapping("/list")
+    public R<List<Dish>> list(Dish dish) {
+        LambdaQueryWrapper<Dish> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(dish.getCategoryId() != null, Dish::getCategoryId, dish.getCategoryId());
+        //添加条件，查询状态为1（1为起售，0为停售）的菜品
+        queryWrapper.eq(Dish::getStatus, 1);
+        List<Dish> dishes = dishService.list(queryWrapper);
+        return R.success(dishes);
+    }
 }

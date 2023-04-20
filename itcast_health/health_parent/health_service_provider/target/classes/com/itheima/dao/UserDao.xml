@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//com.lotushint.mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.itheima.dao.UserDao">
+    <resultMap id="baseResultMap" type="com.itheima.pojo.User">
+        <id column="id" property="id"/>
+        <result column="birthday" property="birthday"/>
+        <result column="gender" property="gender"/>
+        <result column="username" property="username"/>
+        <result column="password" property="password"/>
+        <result column="remark" property="remark"/>
+        <result column="station" property="station"/>
+        <result column="telephone" property="telephone"/>
+    </resultMap>
+    <!-- 继承 baseResultMap -->
+    <resultMap id="findByUsernameResultMap" type="com.itheima.pojo.User" extends="baseResultMap">
+        <!-- 多对多映射 -->
+        <collection property="roles" javaType="java.util.HashSet" ofType="com.itheima.pojo.Role"
+                    column="id" select="com.itheima.dao.RoleDao.findByUserId">
+        </collection>
+    </resultMap>
+
+    <select id="findByUsername" parameterType="string" resultMap="findByUsernameResultMap">
+        select *
+        from t_user
+        where username = #{username}
+    </select>
+
+</mapper>
