@@ -5,7 +5,8 @@ import cn.itcast.hotel.pojo.PageResult;
 import cn.itcast.hotel.pojo.RequestParams;
 import com.baomidou.mybatisplus.extension.service.IService;
 
-import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 
 public interface IHotelService extends IService<Hotel> {
     /**
@@ -15,4 +16,6 @@ public interface IHotelService extends IService<Hotel> {
      * @return 酒店文档列表
      */
     PageResult search(RequestParams params);
+
+    Map<String, List<String>> filters(RequestParams params);
 }
